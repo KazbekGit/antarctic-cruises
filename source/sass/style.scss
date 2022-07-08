@@ -13,13 +13,23 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
+@import "global/page-body.scss";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
 @import "blocks/modal";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/nav-list.scss";
+@import "blocks/main-screen.scss";
+@import "blocks/logo.scss";
+@import "blocks/burger-menu.scss";
+@import "blocks/trip.scss";
+@import "blocks/advantages.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
 
 // ---------------------------------
 

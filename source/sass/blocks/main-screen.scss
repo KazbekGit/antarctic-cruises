@@ -1,0 +1,50 @@
+.main-screen__header {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 30px;
+  margin-left: 130px;
+
+  font-size: 54px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 66px;
+
+  text-shadow: 0px 4px 4px $color-shadow-25;
+
+  @media (max-width: $vp-1365) {
+    margin-bottom: 0;
+    margin-left: 0;
+
+    font-size: 50px;
+
+  }
+
+  @media (max-width: $vp-767) {
+    margin-left: 0;
+
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+.main-screen__description {
+  margin-left: 130px;
+
+  font-size: 20px;
+  font-weight: 400;
+
+  text-shadow: 0px 4px 4px $color-shadow-25;
+
+  @media (max-width: $vp-1365) {
+    margin-left: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-left: 0;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
