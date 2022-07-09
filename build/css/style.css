@@ -1059,9 +1059,73 @@ button,
 
 .cruises__info {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  opacity: 0;
   width: 260px;
   height: 386px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  color: #F9FBFD;
   background-color: #011C40;
+  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+}
+
+.cruises__info-header {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.cruises__info-subtitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.cruises__info-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.cruises__item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  min-height: 40px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #011C40;
+  background-color: #F9FBFD;
 }
 
 .cruises__images {
@@ -1079,6 +1143,13 @@ button,
 .cruises__img {
   width: 260px;
   height: 386px;
+}
+
+.cruises__item:hover .cruises__info {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1226,6 +1297,8 @@ button,
 
   .cruises__info {
     width: 309px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .cruises__img {
@@ -1396,6 +1469,8 @@ button,
 
   .cruises__info {
     width: 270px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .cruises__img {

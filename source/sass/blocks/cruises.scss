@@ -50,18 +50,84 @@
 .cruises__info {
   position: absolute;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  opacity: 0;
+
   width: 260px;
   height: 386px;
 
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+
+  color: $color-alice-blue;
   background-color: $color-tangaroa;
+
+  box-shadow: 0px 4px 35px $color-shadow-15;
 
   @media (max-width: $vp-1365) {
     width: 309px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   @media (max-width: $vp-767) {
     width: 270px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
+}
+
+.cruises__info-header {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.cruises__info-subtitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.cruises__info-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.cruises__item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: auto;
+  min-height: 40px;
+
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+
+  color: $color-tangaroa;
+  background-color: $color-alice-blue;
 }
 
 .cruises__images {
@@ -82,6 +148,12 @@
   @media (max-width: $vp-767) {
     width: 270px;
   }
+}
+
+.cruises__item:hover .cruises__info {
+  opacity: 1;
+
+  transition: 0.5s;
 }
 
 
