@@ -1,8 +1,4 @@
 .trip {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   padding-left: 103px;
   padding-right: 103px;
   padding-top: 108px;
@@ -16,14 +12,22 @@
   }
 
   @media (max-width: $vp-767) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 65px;
     padding-bottom: 65px;
+  }
+}
+
+.trip__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 

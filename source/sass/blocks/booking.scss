@@ -1,0 +1,105 @@
+.booking {
+  display: flex;
+  column-gap: 144px;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 163px;
+  padding-right: 163px;
+
+  background-color: $color-pale-cornflower-blue;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 1366px) {
+
+    background-image: url('../img/form-bg-desktop@1x.webp');
+    @media (min-resolution: $retina-dppx) {
+      background-image: url('../img/form-bg-desktop@2x.webp');
+    }
+  }
+
+  @media (max-width: $vp-1365) {
+    flex-direction: column;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 174px;
+    padding-right: 174px;
+
+    background-image: url('../img/form-bg-tablet@1x.webp');
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url('../img/form-bg-tablet@2x.webp');
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-image: url('../img/form-bg-mobile@1x.webp');
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url('../img/form-bg-mobile@2x.webp');
+    }
+  }
+}
+
+.booking__text {
+  @media (max-width: $vp-1365) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+.booking__header {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+
+  color: $color-tangaroa;
+
+  @media (max-width: $vp-1365) {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 51px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+
+    text-align: center;
+  }
+
+}
+
+.booking__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+
+  @media (max-width: $vp-1365) {
+    text-align: center;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  color: $color-tangaroa;
+}

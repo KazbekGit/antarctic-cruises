@@ -64,22 +64,24 @@
       </div>
     </header>
     <section class="trip">
-      <div class="trip__text">
-        <h2 class="trip__header">Путешествие<br class="br-on-tablet-and-mobile"> на край Земли</h2>
-        <p class="trip__description">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики.
-          Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько
-          видов пингвинов, китов, морских котиков и многое другое.
-        </p>
-      </div>
-      <div class="trip__img-wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1366px)" srcset="img/description-img-desktop@1x.webp, img/description-img-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/description-img-tablet@1x.webp, img/description-img-tablet@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 320px)" srcset="img/description-img-mobile@1x.webp, img/description-img-mobile@2x.webp 2x">
-          <source media="(min-width: 1366px)" srcset="img/description-img-desktop@1x.jpg, img/description-img-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/description-img-tablet@1x.jpg, img/description-img-tablet@2x.jpg 2x">
-          <img class="trip__img" src="img/description-img-mobile@1x.jpg" srcset="img/description-img-mobile@2x.jpg" alt="Пингвины в Антарктике">
-        </picture>
+      <div class="trip__wrapper">
+        <div class="trip__text">
+          <h2 class="trip__header">Путешествие<br class="br-on-tablet-and-mobile"> на край Земли</h2>
+          <p class="trip__description">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики.
+            Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько
+            видов пингвинов, китов, морских котиков и многое другое.
+          </p>
+        </div>
+        <div class="trip__img-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/description-img-desktop@1x.webp, img/description-img-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/description-img-tablet@1x.webp, img/description-img-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/description-img-mobile@1x.webp, img/description-img-mobile@2x.webp 2x">
+            <source media="(min-width: 1366px)" srcset="img/description-img-desktop@1x.jpg, img/description-img-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/description-img-tablet@1x.jpg, img/description-img-tablet@2x.jpg 2x">
+            <img class="trip__img" src="img/description-img-mobile@1x.jpg" srcset="img/description-img-mobile@2x.jpg" alt="Пингвины в Антарктике">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="advantages">
@@ -301,6 +303,24 @@
           </picture>
         </div>
       </div>
+    </section>
+    <section class="booking">
+      <div class="booking__text">
+        <header class="booking__header">Раннее бронирование</header>
+        <p class="booking__description">Забронируйте тур <br class="br-on-mobile">за 3-6 месяцев<br class="br-on-desktop-and-tablet">
+          до даты выезда и сэкономьте до 50%</p>
+      </div>
+      <form class="booking-form" action="https://webhook.site/311c5de2-d007-4b17-8d51-0396849b0d25" method="POST">
+        <p class="booking-form__header">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+        <input class="booking-form__name" type="text" placeholder="Имя" aria-label="Введите имя" required>
+        <input class="booking-form__phone" type="tel" name="booking-phone" id="phone" pattern="\8\s?[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="8XXXXXXXXXX" aria-label="Введите Ваш телефон" required>
+        <input class="booking-form__email" type="email" name="booking-email" id="email" placeholder="Электронный адрес" aria-label="Введите электронный адрес" required>
+        <input class="booking-form__checkbox" type="checkbox" name="personal-data-checkbox" id="personal-data-agreement" checked>
+        <label class="booking-form__label" for="personal-data-agreement">
+          <span class="booking-form__label-text">Я согласен на обработку моих персональных данных</span>
+        </label>
+        <button class="booking-form__submit" type="submit">Оставить заявку</button>
+      </form>
     </section>
     <footer class="page-footer">
       <a class="logo logo--desktop" href="index.html">

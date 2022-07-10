@@ -648,6 +648,10 @@ button,
   display: none;
 }
 
+.br-on-desktop-and-tablet {
+  display: inline-block;
+}
+
 .page-body {
   width: 100%;
   max-width: 1366px;
@@ -878,6 +882,13 @@ button,
 }
 
 .trip {
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 108px;
+  padding-bottom: 132px;
+}
+
+.trip__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -887,10 +898,6 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-left: 103px;
-  padding-right: 103px;
-  padding-top: 108px;
-  padding-bottom: 132px;
 }
 
 .trip__header {
@@ -1152,6 +1159,144 @@ button,
   transition: 0.5s;
 }
 
+.booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 144px;
+  -moz-column-gap: 144px;
+  column-gap: 144px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 163px;
+  padding-right: 163px;
+  background-color: #afd0fc;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.booking__header {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #011C40;
+}
+
+.booking__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #011C40;
+}
+
+.booking-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 50px 50px;
+  max-width: 403px;
+  background-color: #011C40;
+}
+
+.booking-form input {
+  min-height: 43px;
+  padding-left: 16px;
+  border: none;
+}
+
+.booking-form__header {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #F9FBFD;
+}
+
+.booking-form__label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #F9FBFD;
+}
+
+.booking-form__label-text {
+  padding-left: 24px;
+}
+
+.booking-form__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 43px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: none;
+  background-color: #F9FBFD;
+}
+
+.booking-form__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.booking-form__checkbox:checked + .booking-form__label::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 8px;
+  border: 2px solid #011C40;
+  border-top: none;
+  border-right: none;
+  left: 4px;
+  top: 2px;
+  -webkit-transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+  background-color: transparent;
+}
+
+.booking-form__label::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: #F9FBFD;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1179,6 +1324,16 @@ button,
 
   .advantages {
     background-image: url("../img/advantages-desktop@2x.webp");
+  }
+
+  .booking {
+    background-image: url("../img/form-bg-desktop@2x.webp");
+  }
+}
+
+@media (min-width: 1366px) {
+  .booking {
+    background-image: url("../img/form-bg-desktop@1x.webp");
   }
 }
 
@@ -1304,6 +1459,41 @@ button,
   .cruises__img {
     width: 309px;
   }
+
+  .booking {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 174px;
+    padding-right: 174px;
+    background-image: url("../img/form-bg-tablet@1x.webp");
+  }
+
+  .booking__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .booking__header {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 51px;
+  }
+
+  .booking__description {
+    text-align: center;
+  }
 }
 
 @media (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1365px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1365px) and (min-resolution: 1.5dppx) {
@@ -1314,11 +1504,19 @@ button,
   .advantages {
     background-image: url("../img/advantages-tablet@2x.webp");
   }
+
+  .booking {
+    background-image: url("../img/form-bg-tablet@2x.webp");
+  }
 }
 
 @media (max-width: 767px) {
   .br-on-mobile {
     display: inline-block;
+  }
+
+  .br-on-desktop-and-tablet {
+    display: none;
   }
 
   .modal__wrapper {
@@ -1388,6 +1586,13 @@ button,
   }
 
   .trip {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .trip__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1398,10 +1603,6 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 65px;
-    padding-bottom: 65px;
   }
 
   .trip__header {
@@ -1476,6 +1677,42 @@ button,
   .cruises__img {
     width: 270px;
   }
+
+  .booking {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url("../img/form-bg-mobile@1x.webp");
+  }
+
+  .booking__header {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  .booking__description {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .booking-form {
+    max-width: 290px;
+    padding: 65px 30px;
+  }
+
+  .booking-form__header {
+    text-align: center;
+  }
+
+  .booking-form__checkbox:checked + .booking-form__label::after {
+    top: 7px;
+  }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -1485,5 +1722,9 @@ button,
 
   .advantages {
     background-image: url("../img/advantages-mobile@2x.webp");
+  }
+
+  .booking {
+    background-image: url("../img/form-bg-mobile@2x.webp");
   }
 }
