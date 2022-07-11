@@ -1,4 +1,6 @@
 .booking-form {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -54,6 +56,8 @@
 
 .booking-form__label-text {
   padding-left: 24px;
+
+  cursor: pointer;
 }
 
 .booking-form__submit {
@@ -72,14 +76,25 @@
 
   border: none;
 
+  cursor: pointer;
+
   background-color: $color-alice-blue;
 
 }
 
+.booking-form__submit:disabled {
+  cursor: auto;
+}
+
 .booking-form__checkbox {
   position: absolute;
+  top: 380px;
   z-index: -1;
   opacity: 0;
+
+  @media (max-width: $vp-767) {
+    top: 350px;
+  }
 }
 
 
@@ -100,11 +115,17 @@
 
   transform: rotate(-50deg);
 
+  cursor: pointer;
+
   background-color: transparent;
 
   @media (max-width: $vp-767) {
     top: 7px;
   }
+}
+
+.booking-form__checkbox:checked + .booking-form__submit {
+  border-color: red;
 }
 
 .booking-form__label::before {
@@ -114,6 +135,8 @@
 
   width: 18px;
   height: 18px;
+
+  cursor: pointer;
 
   background-color: $color-alice-blue;
 }

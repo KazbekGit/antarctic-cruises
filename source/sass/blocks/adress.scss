@@ -1,0 +1,84 @@
+.adress {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 120px 103px;
+
+  color: $color-tangaroa;
+
+  @media (max-width: $vp-1365) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+
+    padding: 100px 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 316px;
+
+    padding: 65px 15px;
+  }
+
+}
+
+.adress__map {
+  width: 560px;
+  height: 305px;
+  justify-self: center;
+
+  @media (max-width: $vp-1365) {
+    width: 100%;
+    height: 335px;
+  }
+
+  @media (max-width: $vp-767) {
+    height: 316px;
+
+    margin-top: 43px;
+
+    order: 2;
+  }
+}
+
+.adress__text {
+  max-width: 500px;
+
+  @media (max-width: $vp-767) {
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.adress__text-header {
+  margin-bottom: 45px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+
+  @media (max-width: $vp-767) {
+    text-align: center;
+  }
+}
+
+.adress__geolocation {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  margin-bottom: 33px;
+}
+
+.adress__phone {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
