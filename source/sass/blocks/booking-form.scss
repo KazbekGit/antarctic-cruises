@@ -5,7 +5,8 @@
   flex-direction: column;
   row-gap: 20px;
 
-  padding: 50px 50px;
+  padding: 25px 50px;
+  padding-bottom: 45px;
 
   max-width: 403px;
 
@@ -31,6 +32,10 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 23px;
 
   color: $color-alice-blue;
 
@@ -68,6 +73,8 @@
   min-height: 43px;
   width: 100%;
 
+  margin-top: 20px;
+
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
@@ -79,7 +86,6 @@
   cursor: pointer;
 
   background-color: $color-alice-blue;
-
 }
 
 .booking-form__submit:disabled {

@@ -90,3 +90,10 @@ html {
     display: none;
   }
 }
+
+.br-on-desktop-and-mobile {
+  display: inline-block;
+  @media (max-width: $vp-1365) and (min-width: $vp-767)  {
+    display: none;
+  }
+}

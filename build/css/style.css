@@ -656,6 +656,10 @@ html {
   display: inline-block;
 }
 
+.br-on-desktop-and-mobile {
+  display: inline-block;
+}
+
 .page-body {
   width: 100%;
   max-width: 1366px;
@@ -825,7 +829,7 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 180px;
+  margin-bottom: 202px;
 }
 
 .nav-list {
@@ -888,17 +892,16 @@ html {
 .main-screen__header {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
-  margin-left: 130px;
+  margin-left: 96px;
   font-size: 54px;
   font-weight: 700;
   text-align: left;
-  line-height: 66px;
+  line-height: 55px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main-screen__description {
-  margin-left: 130px;
+  margin-left: 96px;
   font-size: 20px;
   font-weight: 400;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -943,6 +946,10 @@ html {
   justify-content: space-between;
 }
 
+.trip__text {
+  padding-top: 25px;
+}
+
 .trip__header {
   padding: 0;
   margin: 0;
@@ -956,6 +963,7 @@ html {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  margin-top: 27px;
 }
 
 .trip__img-wrapper {
@@ -981,13 +989,13 @@ html {
   align-items: center;
   padding-left: 103px;
   padding-right: 103px;
-  padding-top: 113px;
+  padding-top: 80px;
   padding-bottom: 127px;
   background-image: url("../img/advantages-desktop@1x.webp");
 }
 
 .advantages__header {
-  margin-bottom: 64px;
+  margin-bottom: 52px;
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
@@ -997,9 +1005,12 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 40px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1008,11 +1019,24 @@ html {
 
 .advantages__item {
   min-height: 241px;
-  padding-top: 30px;
+  width: 360px;
+  padding-top: 34px;
   padding-left: 30px;
-  padding-bottom: 50px;
-  padding-right: 42px;
+  padding-bottom: 21px;
+  padding-right: 30px;
   background-color: #ffffff;
+}
+
+.advantages__item--small-liner .advantages__icon {
+  margin-bottom: 10px;
+}
+
+.advantages__item--excursion-tour .advantages__icon {
+  margin-bottom: 20px;
+}
+
+.advantages__item--excursion-tour .advantages__item-header {
+  margin-bottom: 10px;
 }
 
 .advantages__icon {
@@ -1051,6 +1075,10 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  padding-top: 20px;
   padding-left: 103px;
   padding-right: 103px;
   background-color: #011C40;
@@ -1061,8 +1089,6 @@ html {
 }
 
 .social__list {
-  margin: 0;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1075,6 +1101,10 @@ html {
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 10px;
   list-style: none;
 }
 
@@ -1089,14 +1119,14 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 102px;
   padding-bottom: 120px;
   padding-left: 108px;
   padding-right: 108px;
 }
 
 .cruises__header {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
@@ -1104,7 +1134,7 @@ html {
 }
 
 .cruises__item {
-  position: static;
+  position: relative;
 }
 
 .cruises__info {
@@ -1124,7 +1154,7 @@ html {
   height: 386px;
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 30px;
+  padding-top: 70px;
   color: #F9FBFD;
   background-color: #011C40;
   -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
@@ -1132,12 +1162,15 @@ html {
 }
 
 .cruises__info-header {
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
   margin: 0;
   padding: 0;
-  margin-bottom: 12px;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+  color: #F9FBFD;
 }
 
 .cruises__info-subtitle {
@@ -1202,6 +1235,12 @@ html {
   transition: 0.5s;
 }
 
+.cruises__item:hover .cruises__info-header {
+  top: 30px;
+  left: 25px;
+  z-index: 10;
+}
+
 .booking {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1236,6 +1275,8 @@ html {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
+  margin: 0;
+  padding: 0;
   color: #011C40;
 }
 
@@ -1249,7 +1290,8 @@ html {
   -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 20px;
-  padding: 50px 50px;
+  padding: 25px 50px;
+  padding-bottom: 45px;
   max-width: 403px;
   background-color: #011C40;
 }
@@ -1264,6 +1306,9 @@ html {
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+  margin: 0;
+  padding: 0;
+  margin-top: 23px;
   color: #F9FBFD;
 }
 
@@ -1303,6 +1348,7 @@ html {
   align-items: center;
   min-height: 43px;
   width: 100%;
+  margin-top: 20px;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
@@ -1384,7 +1430,7 @@ html {
 }
 
 .adress__text-header {
-  margin-bottom: 45px;
+  margin-bottom: 23px;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -1542,7 +1588,7 @@ html {
   }
 
   .advantages__item {
-    min-width: 206px;
+    width: 206px;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -1553,7 +1599,15 @@ html {
   }
 
   .social {
-    margin-left: 50px;
+    margin-left: 0;
+  }
+
+  .social__list {
+    margin: 0;
+    padding: 0;
+    -webkit-column-gap: 23px;
+    -moz-column-gap: 23px;
+    column-gap: 23px;
   }
 
   .cruises {
@@ -1838,7 +1892,7 @@ html {
   }
 
   .advantages__item {
-    min-width: 290px;
+    width: 290px;
   }
 
   .page-footer {
@@ -1952,10 +2006,6 @@ html {
     -ms-flex-align: start;
     align-items: flex-start;
   }
-
-  .adress__text-header {
-    text-align: center;
-  }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -1969,5 +2019,11 @@ html {
 
   .booking {
     background-image: url("../img/form-bg-mobile@2x.webp");
+  }
+}
+
+@media (max-width: 1365px) and (min-width: 767px) {
+  .br-on-desktop-and-mobile {
+    display: none;
   }
 }

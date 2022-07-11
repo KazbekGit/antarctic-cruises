@@ -2,7 +2,7 @@
   margin-left: 300px;
 
   @media (max-width: $vp-1365) {
-    margin-left: 50px;
+    margin-left: 0;
   }
 
   @media (max-width: $vp-767) {
@@ -11,13 +11,23 @@
 }
 
 .social__list {
-  margin: 0;
-  padding: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 28px;
 
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+
   list-style: none;
+
+  @media (max-width: $vp-1365) {
+    margin: 0;
+    padding: 0;
+
+    column-gap: 23px;
+
+  }
 }

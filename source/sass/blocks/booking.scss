@@ -65,6 +65,7 @@
   font-weight: 700;
   line-height: 60px;
 
+
   color: $color-tangaroa;
 
   @media (max-width: $vp-1365) {
@@ -87,6 +88,9 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
+
+  margin: 0;
+  padding: 0;
 
   @media (max-width: $vp-1365) {
     text-align: center;

@@ -57,15 +57,11 @@
 }
 
 .adress__text-header {
-  margin-bottom: 45px;
+  margin-bottom: 23px;
 
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
-
-  @media (max-width: $vp-767) {
-    text-align: center;
-  }
 }
 
 .adress__geolocation {
