@@ -1219,12 +1219,13 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: auto;
+  width: 100%;
   min-height: 40px;
   margin-bottom: 30px;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
+  z-index: 11;
   color: #011c40;
   background-color: #f9fbfd;
 }
@@ -1255,7 +1256,7 @@ html {
 
 .cruises__item:hover .cruises__info-header {
   top: 30px;
-  left: 35px;
+  left: 25px;
   z-index: 10;
 }
 
@@ -2089,10 +2090,6 @@ html {
 
   .cruises__img {
     width: 270px;
-  }
-
-  .cruises__item:hover .cruises__info-header {
-    left: 25px;
   }
 
   .booking {

@@ -131,7 +131,7 @@
   justify-content: center;
   align-items: center;
 
-  width: auto;
+  width: 100%;
   min-height: 40px;
 
   margin-bottom: 30px;
@@ -139,6 +139,8 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
+
+  z-index: 11;
 
   color: $color-tangaroa;
   background-color: $color-alice-blue;
@@ -172,10 +174,6 @@
 
 .cruises__item:hover .cruises__info-header {
   top: 30px;
-  left: 35px;
+  left: 25px;
   z-index: 10;
-
-  @media (max-width: $vp-767) {
-    left: 25px;
-  }
 }
