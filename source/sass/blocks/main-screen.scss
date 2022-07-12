@@ -9,7 +9,7 @@
   text-align: left;
   line-height: 55px;
 
-  text-shadow: 0px 4px 4px $color-shadow-25;
+  text-shadow: 0 4px 4px $color-shadow-25;
 
   @media (max-width: $vp-1365) {
     margin-bottom: 0;
@@ -34,7 +34,7 @@
   font-size: 20px;
   font-weight: 400;
 
-  text-shadow: 0px 4px 4px $color-shadow-25;
+  text-shadow: 0 4px 4px $color-shadow-25;
 
   @media (max-width: $vp-1365) {
     margin-left: 0;
@@ -53,4 +53,3 @@
     line-height: 22px;
   }
 }
-

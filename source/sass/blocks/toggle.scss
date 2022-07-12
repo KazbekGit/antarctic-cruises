@@ -7,11 +7,9 @@
   background-color: $color-default-white;
 
   box-shadow: 0 6px $color-default-white,
-              0 -6px $color-default-white;
+    0 -6px $color-default-white;
 
   @media (min-width: $vp-768) {
     display: none;
   }
-
 }
-

@@ -12,4 +12,3 @@ const toggleNav = () => {
 };
 
 export {toggleNav};
-

@@ -15,10 +15,10 @@
   background-size: cover;
 
   @media (min-width: 1366px) {
+    background-image: url("../img/form-bg-desktop@1x.webp");
 
-    background-image: url('../img/form-bg-desktop@1x.webp');
     @media (min-resolution: $retina-dppx) {
-      background-image: url('../img/form-bg-desktop@2x.webp');
+      background-image: url("../img/form-bg-desktop@2x.webp");
     }
   }
 
@@ -30,10 +30,10 @@
     padding-left: 174px;
     padding-right: 174px;
 
-    background-image: url('../img/form-bg-tablet@1x.webp');
+    background-image: url("../img/form-bg-tablet@1x.webp");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url('../img/form-bg-tablet@2x.webp');
+      background-image: url("../img/form-bg-tablet@2x.webp");
     }
   }
 
@@ -43,16 +43,17 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    background-image: url('../img/form-bg-mobile@1x.webp');
+    background-image: url("../img/form-bg-mobile@1x.webp");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url('../img/form-bg-mobile@2x.webp');
+      background-image: url("../img/form-bg-mobile@2x.webp");
     }
   }
 }
 
 .booking__text {
   margin-top: -8px;
+
   @media (max-width: $vp-1365) {
     display: flex;
     flex-direction: column;
@@ -86,7 +87,6 @@
 
     text-align: center;
   }
-
 }
 
 .booking__description {

@@ -78,7 +78,7 @@
   }
 
   @media (max-width: $vp-767) {
-      margin-top: -5px;
+    margin-top: -5px;
   }
 }
 
@@ -105,8 +105,6 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
 
   border: none;
 
@@ -160,10 +158,6 @@
   }
 }
 
-.booking-form__checkbox:checked + .booking-form__submit {
-  border-color: red;
-}
-
 .booking-form__label::before {
   position: absolute;
 
@@ -176,5 +170,3 @@
 
   background-color: $color-alice-blue;
 }
-
-

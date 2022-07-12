@@ -72,6 +72,7 @@ html {
 
 .br-on-desktop {
   display: none;
+
   @media (min-width: $vp-1366) {
     display: inline-block;
   }
@@ -79,13 +80,15 @@ html {
 
 .br-on-tablet {
   display: none;
-  @media (min-width: $vp-768) and (max-width: $vp-1365){
+
+  @media (min-width: $vp-768) and (max-width: $vp-1365) {
     display: inline-block;
   }
 }
 
 .br-on-mobile {
   display: none;
+
   @media (max-width: $vp-767) {
     display: inline-block;
   }
@@ -93,6 +96,7 @@ html {
 
 .br-on-tablet-and-mobile {
   display: none;
+
   @media (max-width: $vp-1365) {
     display: inline-block;
   }
@@ -100,6 +104,7 @@ html {
 
 .br-on-desktop-and-tablet {
   display: inline-block;
+
   @media (max-width: $vp-767) {
     display: none;
   }
@@ -107,7 +112,8 @@ html {
 
 .br-on-desktop-and-mobile {
   display: inline-block;
-  @media (max-width: $vp-1365) and (min-width: $vp-767)  {
+
+  @media (max-width: $vp-1365) and (min-width: $vp-767) {
     display: none;
   }
 }

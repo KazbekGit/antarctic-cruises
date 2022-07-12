@@ -20,4 +20,3 @@ const changeSubmitState = () => {
 };
 
 export {changeSubmitState};
-

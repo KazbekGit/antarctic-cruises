@@ -674,7 +674,7 @@ html {
   min-width: 320px;
   margin: 0 auto;
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .btn {
@@ -818,12 +818,12 @@ html {
   padding-left: 103px;
   padding-right: 103px;
   padding-top: 35px;
-  color: #F9FBFD;
+  color: #f9fbfd;
   background-image: url("../img/header-bg-desktop@1x.webp");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
-  background-color: #0A63B4;
+  background-color: #0a63b4;
 }
 
 .main-nav {
@@ -855,7 +855,7 @@ html {
 }
 
 .nav-list__link {
-  color: #F9FBFD;
+  color: #f9fbfd;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
@@ -883,7 +883,7 @@ html {
   transform: rotate(45deg);
   -webkit-box-shadow: none;
   box-shadow: none;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .nav-block--opened .toggle::after {
@@ -894,7 +894,7 @@ html {
   content: "";
   width: 16px;
   height: 2px;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .main-screen__header {
@@ -905,14 +905,14 @@ html {
   font-weight: 700;
   text-align: left;
   line-height: 55px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main-screen__description {
   margin-left: 96px;
   font-size: 20px;
   font-weight: 400;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo--desktop {
@@ -964,7 +964,7 @@ html {
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .trip__description {
@@ -1010,7 +1010,7 @@ html {
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .advantages__list {
@@ -1026,7 +1026,7 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
-  color: #011C40;
+  color: #011c40;
 }
 
 .advantages__item {
@@ -1090,7 +1090,7 @@ html {
   padding-top: 20px;
   padding-left: 103px;
   padding-right: 103px;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .social {
@@ -1148,7 +1148,7 @@ html {
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .cruises__item {
@@ -1173,10 +1173,10 @@ html {
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 70px;
-  color: #F9FBFD;
-  background-color: #011C40;
-  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  color: #f9fbfd;
+  background-color: #011c40;
+  -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
 }
 
 .cruises__info-header {
@@ -1188,7 +1188,7 @@ html {
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .cruises__info-subtitle {
@@ -1225,8 +1225,8 @@ html {
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
-  color: #011C40;
-  background-color: #F9FBFD;
+  color: #011c40;
+  background-color: #f9fbfd;
 }
 
 .cruises__images {
@@ -1291,7 +1291,7 @@ html {
   font-weight: 700;
   line-height: 60px;
   margin-bottom: 15px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .booking__description {
@@ -1300,7 +1300,7 @@ html {
   line-height: 27px;
   margin: 0;
   padding: 0;
-  color: #011C40;
+  color: #011c40;
 }
 
 .booking-form {
@@ -1316,7 +1316,7 @@ html {
   padding: 25px 50px;
   padding-bottom: 45px;
   max-width: 403px;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .booking-form input {
@@ -1332,7 +1332,7 @@ html {
   margin: 0;
   padding: 0;
   margin-top: 23px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .booking-form__label {
@@ -1351,7 +1351,7 @@ html {
   font-size: 10px;
   font-weight: 400;
   line-height: 13px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .booking-form__label-text {
@@ -1375,11 +1375,9 @@ html {
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
   border: none;
   cursor: pointer;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .booking-form__submit:disabled {
@@ -1398,7 +1396,7 @@ html {
   content: "";
   width: 10px;
   height: 8px;
-  border: 2px solid #011C40;
+  border: 2px solid #011c40;
   border-top: none;
   border-right: none;
   left: 4px;
@@ -1410,17 +1408,13 @@ html {
   background-color: transparent;
 }
 
-.booking-form__checkbox:checked + .booking-form__submit {
-  border-color: red;
-}
-
 .booking-form__label::before {
   position: absolute;
   content: "";
   width: 18px;
   height: 18px;
   cursor: pointer;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .adress {
@@ -1439,7 +1433,7 @@ html {
   justify-content: center;
   padding: 120px 103px;
   padding-bottom: 110px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .adress__map {
@@ -1872,7 +1866,7 @@ html {
     padding-left: 25px;
     padding-right: 15px;
     padding-top: 22px;
-    background-color: #F9FBFD;
+    background-color: #f9fbfd;
   }
 
   .nav-block--opened .nav-list {
@@ -1898,7 +1892,7 @@ html {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 20px;
-    background-color: #F9FBFD;
+    background-color: #f9fbfd;
   }
 
   .nav-block--opened .nav-block__logo {
@@ -1914,7 +1908,7 @@ html {
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-    color: #011C40;
+    color: #011c40;
   }
 
   .nav-block--nojs .nav-list {
@@ -1934,7 +1928,7 @@ html {
   }
 
   .nav-block--nojs .nav-list__link {
-    color: #011C40;
+    color: #011c40;
   }
 
   .main-screen__header {

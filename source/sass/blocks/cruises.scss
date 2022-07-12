@@ -66,7 +66,7 @@
   color: $color-alice-blue;
   background-color: $color-tangaroa;
 
-  box-shadow: 0px 4px 35px $color-shadow-15;
+  box-shadow: 0 4px 35px $color-shadow-15;
 
   @media (max-width: $vp-1365) {
     width: 309px;
@@ -179,6 +179,3 @@
     left: 25px;
   }
 }
-
-
-

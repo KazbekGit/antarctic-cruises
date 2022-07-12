@@ -14,7 +14,6 @@
 
       background-color: $color-alice-blue;
     }
-
   }
 
   &--opened .nav-list {
@@ -80,7 +79,6 @@
 }
 
 .nav-block--nojs .nav-list {
-
   @media (max-width: $vp-767) {
     display: flex;
     flex-direction: column;
@@ -127,4 +125,3 @@
 
   background-color: $color-tangaroa;
 }
-
