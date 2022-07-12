@@ -24,10 +24,21 @@
   list-style: none;
 
   @media (max-width: $vp-1365) {
-    margin: 0;
-    padding: 0;
+    margin-left: 66px;
 
-    column-gap: 23px;
-
+    column-gap: 16px;
   }
+
+  @media (max-width: $vp-767) {
+    margin-left: 0;
+  }
+}
+
+.social__item a {
+  font-size: 0;
+  line-height: 0;
+}
+
+.social__icon {
+  height: 16px;
 }

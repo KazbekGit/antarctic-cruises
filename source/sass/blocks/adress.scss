@@ -6,6 +6,7 @@
   justify-content: center;
 
   padding: 120px 103px;
+  padding-bottom: 110px;
 
   color: $color-tangaroa;
 
@@ -13,7 +14,10 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
 
-    padding: 100px 45px;
+    padding: 0 45px;
+    padding-top: 80px;
+    padding-bottom: 88px;
+
   }
 
   @media (max-width: $vp-767) {
@@ -45,6 +49,13 @@
 }
 
 .adress__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
   max-width: 500px;
 
   @media (max-width: $vp-767) {
@@ -57,19 +68,19 @@
 }
 
 .adress__text-header {
-  margin-bottom: 23px;
-
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+
+  @media (max-width: $vp-1365) {
+    margin-bottom: 0;
+  }
 }
 
 .adress__geolocation {
   display: flex;
   align-items: center;
   column-gap: 10px;
-
-  margin-bottom: 33px;
 }
 
 .adress__phone {
@@ -77,4 +88,3 @@
   align-items: center;
   column-gap: 10px;
 }
-

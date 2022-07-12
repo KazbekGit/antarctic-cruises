@@ -70,6 +70,20 @@ html {
   transition: none !important;
 }
 
+.br-on-desktop {
+  display: none;
+  @media (min-width: $vp-1366) {
+    display: inline-block;
+  }
+}
+
+.br-on-tablet {
+  display: none;
+  @media (min-width: $vp-768) and (max-width: $vp-1365){
+    display: inline-block;
+  }
+}
+
 .br-on-mobile {
   display: none;
   @media (max-width: $vp-767) {

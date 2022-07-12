@@ -12,6 +12,11 @@
 
   background-color: $color-tangaroa;
 
+  @media (max-width: $vp-1365) {
+    margin-top: 55px;
+    padding-bottom: 54px;
+  }
+
   @media (max-width: $vp-767) {
     max-width: 290px;
 
@@ -57,6 +62,10 @@
   line-height: 13px;
 
   color: $color-alice-blue;
+
+  @media (max-width: $vp-1365) {
+    margin-top: 5px;
+  }
 }
 
 .booking-form__label-text {
@@ -86,6 +95,10 @@
   cursor: pointer;
 
   background-color: $color-alice-blue;
+
+  @media (max-width: $vp-1365) {
+    margin-top: 10px;
+  }
 }
 
 .booking-form__submit:disabled {
@@ -102,7 +115,6 @@
     top: 350px;
   }
 }
-
 
 .booking-form__checkbox:checked + .booking-form__label::after {
   position: absolute;
