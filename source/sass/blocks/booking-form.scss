@@ -14,14 +14,16 @@
 
   @media (max-width: $vp-1365) {
     margin-top: 55px;
-    padding-bottom: 54px;
+    padding-bottom: 50px;
   }
 
   @media (max-width: $vp-767) {
     max-width: 290px;
 
+    margin-top: 33px;
     padding: 65px 30px;
-
+    padding-top: 13px;
+    padding-bottom: 38px;
   }
 }
 
@@ -44,8 +46,16 @@
 
   color: $color-alice-blue;
 
+  @media (max-width: $vp-1365) {
+    margin-bottom: 5px;
+  }
+
   @media (max-width: $vp-767) {
     text-align: center;
+
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 3px;
   }
 }
 
@@ -66,12 +76,20 @@
   @media (max-width: $vp-1365) {
     margin-top: 5px;
   }
+
+  @media (max-width: $vp-767) {
+      margin-top: -5px;
+  }
 }
 
 .booking-form__label-text {
   padding-left: 24px;
 
   cursor: pointer;
+
+  @media (max-width: $vp-767) {
+    padding-right: 54px;
+  }
 }
 
 .booking-form__submit {

@@ -8,9 +8,9 @@
       width: calc(100% - 35px);
       min-height: 568px;
 
-      padding-left: 15px;
+      padding-left: 25px;
       padding-right: 15px;
-      padding-top: 20px;
+      padding-top: 22px;
 
       background-color: $color-alice-blue;
     }
@@ -21,7 +21,7 @@
     @media (max-width: $vp-767) {
       display: flex;
       flex-direction: column;
-      row-gap: 18px;
+      row-gap: 26px;
 
       margin: 0;
       padding: 0;
@@ -52,6 +52,8 @@
 
   @media (max-width: $vp-767) {
     display: inline-block;
+
+    margin-left: -10px;
   }
 }
 
