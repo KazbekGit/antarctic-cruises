@@ -26,17 +26,9 @@
       padding: 0;
     }
   }
-
-  &--footer .nav-list__link {
-    @media (max-width: $vp-1365) {
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 15px;
-    }
-  }
 }
 
-.nav-list__link {
+.nav-list__item a {
   color: $color-alice-blue;
   font-size: 16px;
   font-weight: 500;
@@ -44,5 +36,13 @@
 
   @media (max-width: $vp-1365) {
     font-size: 14px;
+  }
+}
+
+.nav-list__item--footer a {
+  @media (max-width: $vp-1365) {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
   }
 }
