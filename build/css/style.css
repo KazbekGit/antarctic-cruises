@@ -982,6 +982,13 @@ html {
   margin-left: 70px;
 }
 
+.trip__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
 .advantages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1253,6 +1260,11 @@ html {
   top: 30px;
   left: 25px;
   z-index: 10;
+}
+
+.cruises__picture-wrapper img {
+  width: 260px;
+  height: 386px;
 }
 
 .booking {
@@ -1597,6 +1609,10 @@ html {
     padding-bottom: 77px;
   }
 
+  .trip__wrapper {
+    min-height: 264px;
+  }
+
   .trip__text {
     padding-top: 12px;
   }
@@ -1714,6 +1730,10 @@ html {
   }
 
   .cruises__item img {
+    width: 309px;
+  }
+
+  .cruises__picture-wrapper img {
     width: 309px;
   }
 
@@ -2094,6 +2114,10 @@ html {
   }
 
   .cruises__item img {
+    width: 270px;
+  }
+
+  .cruises__picture-wrapper img {
     width: 270px;
   }
 

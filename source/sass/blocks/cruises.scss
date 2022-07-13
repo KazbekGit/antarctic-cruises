@@ -177,3 +177,16 @@
   left: 25px;
   z-index: 10;
 }
+
+.cruises__picture-wrapper img {
+  width: 260px;
+  height: 386px;
+
+  @media (max-width: $vp-1365) {
+    width: 309px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 270px;
+  }
+}

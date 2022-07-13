@@ -24,6 +24,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: $vp-1365) {
+    min-height: 264px;
+  }
+
   @media (max-width: $vp-767) {
     flex-direction: column;
     justify-content: center;
@@ -100,4 +104,11 @@
     width: 290px;
     height: 186px;
   }
+}
+
+.trip__img-wrapper img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: fill;
 }
