@@ -69,7 +69,7 @@
   display: none;
 }
 
-.nav-block--opened .nav-list__link {
+.nav-block--opened a {
   @media (max-width: $vp-767) {
     font-size: 18px;
     font-weight: 500;
@@ -94,7 +94,7 @@
   }
 }
 
-.nav-block--nojs .nav-list__link {
+.nav-block--nojs a {
   @media (max-width: $vp-767) {
     color: $color-tangaroa;
   }

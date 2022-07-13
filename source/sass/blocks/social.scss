@@ -1,5 +1,5 @@
 .social {
-  margin-left: 283px;
+  margin-left: 284px;
 
   @media (max-width: $vp-1365) {
     margin-left: 0;
@@ -18,15 +18,13 @@
 
   margin: 0;
   padding: 0;
-  margin-top: 10px;
-  margin-left: 10px;
 
   list-style: none;
 
   @media (max-width: $vp-1365) {
-    margin-left: 66px;
+    margin-left: 70px;
 
-    column-gap: 16px;
+    column-gap: 19px;
   }
 
   @media (max-width: $vp-767) {
@@ -36,10 +34,12 @@
 }
 
 .social__item a {
-  font-size: 0;
-  line-height: 0;
+  display: flex;
 }
 
-.social__icon {
-  height: 16px;
+.social__list svg {
+  @media (min-width: 1366px) {
+    width: 20px;
+    height: 20px;
+  }
 }
