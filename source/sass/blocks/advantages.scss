@@ -14,6 +14,8 @@
   background-size: cover;
   background-position: 0 0;
 
+  background-color: $color-pale-cornflower-blue;
+
   @media (min-width: 1366px) {
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/advantages-desktop@2x.webp");

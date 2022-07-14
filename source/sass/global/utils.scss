@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  user-select:none;
+}
+
 .wrapper {
   position: relative;
 

@@ -571,6 +571,13 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -852,6 +859,10 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .nav-list__item a {
@@ -1010,6 +1021,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
+  background-color: #afd0fc;
 }
 
 .advantages h3 {
@@ -1085,9 +1097,9 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1228,6 +1240,10 @@ html {
   font-weight: 600;
   line-height: 21px;
   z-index: 11;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #011c40;
   background-color: #f9fbfd;
 }
@@ -1288,6 +1304,7 @@ html {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #afd0fc;
 }
 
 .booking__text {
@@ -1421,8 +1438,13 @@ html {
   content: "";
   width: 18px;
   height: 18px;
+  border-radius: 3px;
   cursor: pointer;
   background-color: #f9fbfd;
+}
+
+.booking-form input[type="checkbox"]:focus + label::before {
+  outline: 2px solid #F8A304;
 }
 
 .adress {
@@ -1686,6 +1708,9 @@ html {
   }
 
   .page-footer {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     min-height: 120px;
     padding-left: 45px;
     padding-right: 45px;

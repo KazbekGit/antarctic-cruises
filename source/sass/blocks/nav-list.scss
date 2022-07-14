@@ -8,6 +8,8 @@
 
   list-style: none;
 
+  user-select:none;
+
   @media (max-width: $vp-1365) {
     column-gap: 23px;
   }

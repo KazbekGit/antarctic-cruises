@@ -14,6 +14,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  background-color: $color-pale-cornflower-blue;
+
   @media (min-width: 1366px) {
     background-image: url("../img/form-bg-desktop@1x.webp");
 
