@@ -1,5 +1,5 @@
-const checkBox = document.querySelector('.booking-form__checkbox');
-const submit = document.querySelector('.booking-form__submit');
+const checkBox = document.querySelector('#personal-data-agreement');
+const submit = document.querySelector('#submit');
 
 const isCheckBoxChecked = () => {
   return checkBox.checked;
