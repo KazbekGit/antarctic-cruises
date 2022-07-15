@@ -1,8 +1,8 @@
 .trip {
   padding-left: 103px;
   padding-right: 103px;
-  padding-top: 108px;
-  padding-bottom: 132px;
+  padding-top: 120px;
+  padding-bottom: 121px;
 
   @media (max-width: $vp-1365) {
     padding-left: 45px;
@@ -36,7 +36,7 @@
 }
 
 .trip__text {
-  padding-top: 25px;
+  margin-top: 13px;
 
   @media (max-width: $vp-1365) {
     padding-top: 12px;
@@ -70,7 +70,7 @@
   font-weight: 400;
   line-height: 24px;
 
-  margin-top: 27px;
+  margin-top: 25px;
 
   @media (max-width: $vp-1365) {
     margin-top: 16px;

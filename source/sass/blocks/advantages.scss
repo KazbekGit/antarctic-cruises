@@ -7,7 +7,7 @@
   padding-left: 103px;
   padding-right: 103px;
   padding-top: 80px;
-  padding-bottom: 117px;
+  padding-bottom: 120px;
 
   background-image: url("../img/advantages-desktop@1x.webp");
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 }
 
 .advantages h3 {
-  margin-bottom: 52px;
+  margin-bottom: 50px;
 
   font-size: 28px;
   font-weight: 600;
@@ -99,7 +99,7 @@
   min-height: 241px;
   width: 360px;
 
-  padding-top: 34px;
+  padding-top: 29px;
   padding-left: 30px;
   padding-bottom: 21px;
   padding-right: 30px;
@@ -122,12 +122,16 @@
 }
 
 .advantages__item--all-inclusive {
+  padding-top: 33px;
+
   @media (max-width: $vp-767) {
     padding-top: 30px;
   }
 }
 
 .advantages__item--excursion-tour {
+  padding-top: 37px;
+
   @media (max-width: $vp-1365) {
     padding-right: 19px;
     padding-top: 27px;
@@ -139,11 +143,11 @@
 }
 
 .advantages__item svg {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .advantages__item--small-liner svg {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   @media (max-width: $vp-1365) {
     width: 21px;
@@ -167,7 +171,7 @@
 }
 
 .advantages__item--excursion-tour svg {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 
   @media (max-width: $vp-1365) {
     width: 38px;
@@ -183,6 +187,8 @@
   padding: 0;
   margin: 0;
 
+  margin-bottom: 10px;
+
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -195,7 +201,7 @@
 }
 
 .advantages__item--excursion-tour header {
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 
 .advantages__item p {

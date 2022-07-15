@@ -3,10 +3,14 @@
 
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 27px;
   row-gap: 20px;
 
-  padding: 25px 50px;
-  padding-bottom: 45px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 52px;
 
   max-width: 403px;
 
@@ -43,6 +47,7 @@
   margin: 0;
   padding: 0;
   margin-top: 23px;
+  margin-bottom: 8px;
 
   color: $color-alice-blue;
 
@@ -100,7 +105,7 @@
   min-height: 43px;
   width: 100%;
 
-  margin-top: 20px;
+  margin-top: 12px;
 
   font-size: 14px;
   font-weight: 600;
@@ -121,6 +126,10 @@
   cursor: auto;
 }
 
+.booking-form input[type="email"] {
+  margin-bottom: 2px;
+}
+
 .booking-form input[type="checkbox"] {
   position: absolute;
   top: 380px;
@@ -139,7 +148,7 @@
   width: 10px;
   height: 8px;
 
-  border: 2px solid $color-tangaroa;
+  border: 1px solid $color-tangaroa;
 
   border-top: none;
   border-right: none;
@@ -174,4 +183,10 @@
 
 .booking-form input[type="checkbox"]:focus + label::before {
   outline: 2px solid $color-orange;
+}
+
+.booking-form input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }

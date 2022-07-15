@@ -7,6 +7,8 @@
 
   color: $color-alice-blue;
 
+  filter: drop-shadow(0 4px 4px $color-shadow-25);
+
   background-image: url("../img/header-bg-desktop@1x.webp");
   background-repeat: no-repeat;
   background-position: 0 0;

@@ -826,6 +826,8 @@ button {
   padding-right: 103px;
   padding-top: 35px;
   color: #f9fbfd;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   background-image: url("../img/header-bg-desktop@1x.webp");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -949,8 +951,8 @@ button {
 .trip {
   padding-left: 103px;
   padding-right: 103px;
-  padding-top: 108px;
-  padding-bottom: 132px;
+  padding-top: 120px;
+  padding-bottom: 121px;
 }
 
 .trip__wrapper {
@@ -966,7 +968,7 @@ button {
 }
 
 .trip__text {
-  padding-top: 25px;
+  margin-top: 13px;
 }
 
 .trip__text h2 {
@@ -982,7 +984,7 @@ button {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin-top: 27px;
+  margin-top: 25px;
 }
 
 .trip__img-wrapper {
@@ -1016,7 +1018,7 @@ button {
   padding-left: 103px;
   padding-right: 103px;
   padding-top: 80px;
-  padding-bottom: 117px;
+  padding-bottom: 120px;
   background-image: url("../img/advantages-desktop@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1025,7 +1027,7 @@ button {
 }
 
 .advantages h3 {
-  margin-bottom: 52px;
+  margin-bottom: 50px;
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
@@ -1051,35 +1053,44 @@ button {
 .advantages__item {
   min-height: 241px;
   width: 360px;
-  padding-top: 34px;
+  padding-top: 29px;
   padding-left: 30px;
   padding-bottom: 21px;
   padding-right: 30px;
   background-color: #ffffff;
 }
 
+.advantages__item--all-inclusive {
+  padding-top: 33px;
+}
+
+.advantages__item--excursion-tour {
+  padding-top: 37px;
+}
+
 .advantages__item svg {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .advantages__item--small-liner svg {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .advantages__item--excursion-tour svg {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .advantages__item header {
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
 }
 
 .advantages__item--excursion-tour header {
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 
 .advantages__item p {
@@ -1097,17 +1108,14 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
-  padding-top: 20px;
-  padding-left: 103px;
+  padding-top: 10px;
+  padding-left: 100px;
   padding-right: 103px;
   background-color: #011c40;
 }
@@ -1151,7 +1159,7 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 112px;
+  padding-top: 110px;
   padding-bottom: 120px;
   padding-left: 108px;
   padding-right: 108px;
@@ -1178,15 +1186,15 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   opacity: 0;
   width: 260px;
   height: 386px;
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 70px;
+  padding-top: 68px;
   color: #f9fbfd;
   background-color: #011c40;
   -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
@@ -1195,7 +1203,7 @@ button {
 
 .cruises__item > p {
   position: absolute;
-  bottom: 25px;
+  bottom: 23px;
   left: 30px;
   margin: 0;
   padding: 0;
@@ -1235,7 +1243,7 @@ button {
   align-items: center;
   width: 100%;
   min-height: 40px;
-  margin-bottom: 30px;
+  margin-top: 13px;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
@@ -1273,7 +1281,7 @@ button {
 }
 
 .cruises__item:hover > p {
-  top: 30px;
+  top: 27px;
   left: 25px;
   z-index: 10;
 }
@@ -1297,10 +1305,9 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 49px;
   padding-left: 163px;
   padding-right: 163px;
-  background-color: #afd0fc;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1312,10 +1319,10 @@ button {
 }
 
 .booking__text header {
+  margin-bottom: 8px;
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
-  margin-bottom: 15px;
   color: #011c40;
 }
 
@@ -1337,9 +1344,15 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  row-gap: 27px;
   row-gap: 20px;
-  padding: 25px 50px;
-  padding-bottom: 45px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 52px;
   max-width: 403px;
   background-color: #011c40;
 }
@@ -1357,6 +1370,7 @@ button {
   margin: 0;
   padding: 0;
   margin-top: 23px;
+  margin-bottom: 8px;
   color: #f9fbfd;
 }
 
@@ -1396,7 +1410,7 @@ button {
   align-items: center;
   min-height: 43px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 12px;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
@@ -1407,6 +1421,10 @@ button {
 
 .booking-form button:disabled {
   cursor: auto;
+}
+
+.booking-form input[type="email"] {
+  margin-bottom: 2px;
 }
 
 .booking-form input[type="checkbox"] {
@@ -1421,7 +1439,7 @@ button {
   content: "";
   width: 10px;
   height: 8px;
-  border: 2px solid #011c40;
+  border: 1px solid #011c40;
   border-top: none;
   border-right: none;
   left: 4px;
@@ -1444,7 +1462,37 @@ button {
 }
 
 .booking-form input[type="checkbox"]:focus + label::before {
-  outline: 2px solid #F8A304;
+  outline: 2px solid #f8a304;
+}
+
+.booking-form input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.booking-form input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.booking-form input:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.booking-form input::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.booking-form input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .adress {
@@ -1482,8 +1530,8 @@ button {
   -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 27px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 75px;
+  padding-bottom: 84px;
   max-width: 500px;
 }
 
@@ -1597,13 +1645,6 @@ button {
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
-  }
-
-  .main-screen h1 {
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-top: 215px;
-    font-size: 50px;
   }
 
   .main-screen p {
@@ -1849,6 +1890,15 @@ button {
 
   .booking {
     background-image: url("../img/form-bg-tablet@2x.webp");
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-screen h1 {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 215px;
+    font-size: 50px;
   }
 }
 
