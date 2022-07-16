@@ -82,12 +82,14 @@
 
 .adress__geolocation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: 10px;
 }
 
 .adress__phone {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: 10px;
 }

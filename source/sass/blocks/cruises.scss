@@ -45,6 +45,8 @@
 
 .cruises__item {
   position: relative;
+
+  min-height: 386px;
 }
 
 .cruises__info {
@@ -57,12 +59,14 @@
   opacity: 0;
 
   width: 260px;
-  height: 386px;
+  min-height: 386px;
 
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 68px;
   padding-bottom: 35px;
+
+  z-index: 5;
 
   color: $color-alice-blue;
   background-color: $color-tangaroa;
@@ -173,6 +177,18 @@
   opacity: 1;
 
   transition: 0.5s;
+}
+
+.cruises__item:focus .cruises__info {
+  opacity: 1;
+
+  transition: 0.3s;
+}
+
+.cruises__item:focus p {
+  top: 27px;
+  left: 25px;
+  z-index: 10;
 }
 
 .cruises__item:hover > p {
