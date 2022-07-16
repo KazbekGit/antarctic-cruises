@@ -1,25 +1,19 @@
 .page-footer {
-  min-height: 130px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 
-  padding-top: 10px;
-  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 48px;
+  padding-left: 103px;
   padding-right: 103px;
 
   background-color: $color-tangaroa;
 
   @media (max-width: $vp-1365) {
-    justify-content: flex-start;
-
-    min-height: 120px;
-
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 0;
 
     column-gap: 25px;
   }
@@ -35,5 +29,6 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
+
   }
 }

@@ -1,4 +1,5 @@
 .logo {
+  margin-right: 40px;
   &--desktop {
     display: block;
     width: 70px;
@@ -11,6 +12,7 @@
   }
 
   @media (max-width: $vp-1365) {
+    margin-right: 25px;
     &--tablet {
       display: block;
       width: 38px;
