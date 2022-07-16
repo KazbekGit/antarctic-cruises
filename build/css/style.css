@@ -1534,7 +1534,7 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 120px 103px;
-  padding-bottom: 110px;
+  padding-bottom: 109px;
   color: #011c40;
 }
 
@@ -1653,10 +1653,6 @@ button {
 }
 
 @media (max-width: 1365px) {
-  .br-on-tablet-and-mobile {
-    display: inline-block;
-  }
-
   .main-nav {
     margin-bottom: 150px;
   }
@@ -1692,10 +1688,47 @@ button {
     display: none;
   }
 
+  .social__list {
+    -webkit-column-gap: 22px;
+    -moz-column-gap: 22px;
+    column-gap: 22px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .br-on-tablet-and-mobile {
+    display: inline-block;
+  }
+
+  .main-header {
+    min-height: 638px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+    background-image: url("../img/header-bg-tablet@1x.webp");
+  }
+
+  .main-screen h1 {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 217px;
+    font-size: 50px;
+  }
+
+  .main-screen p {
+    margin-left: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
   .trip {
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 79px;
+    padding-top: 71px;
     padding-bottom: 77px;
   }
 
@@ -1704,7 +1737,8 @@ button {
   }
 
   .trip__text {
-    padding-top: 12px;
+    padding-top: 21px;
+    margin-top: 0;
   }
 
   .trip__text h2 {
@@ -1721,6 +1755,14 @@ button {
     width: 324px;
     height: 264px;
     margin-left: 10px;
+  }
+
+  .advantages {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 62px;
+    padding-bottom: 99px;
+    background-image: url("../img/advantages-tablet@1x.webp");
   }
 
   .advantages h3 {
@@ -1742,9 +1784,13 @@ button {
     padding-bottom: 18px;
   }
 
+  .advantages__item--all-inclusive {
+    padding-top: 30px;
+  }
+
   .advantages__item--excursion-tour {
     padding-right: 19px;
-    padding-top: 27px;
+    padding-top: 31px;
   }
 
   .advantages__item--small-liner svg {
@@ -1755,6 +1801,7 @@ button {
   .advantages__item--all-inclusive svg {
     width: 33px;
     height: 19px;
+    margin-bottom: 15px;
   }
 
   .advantages__item--excursion-tour svg {
@@ -1770,47 +1817,8 @@ button {
   .page-footer {
     padding-left: 45px;
     padding-right: 45px;
-    -webkit-column-gap: 25px;
-    -moz-column-gap: 25px;
-    column-gap: 25px;
-  }
-
-  .social__list {
-    -webkit-column-gap: 19px;
-    -moz-column-gap: 19px;
-    column-gap: 19px;
-  }
-}
-
-@media (max-width: 1023px) {
-  .main-header {
-    min-height: 638px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 30px;
-    background-image: url("../img/header-bg-tablet@1x.webp");
-  }
-
-  .main-screen h1 {
-    margin-bottom: 0;
-    margin-left: 3px;
-    margin-top: 217px;
-    font-size: 50px;
-  }
-
-  .main-screen p {
-    margin-left: 0;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-  }
-
-  .advantages {
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 62px;
-    padding-bottom: 97px;
-    background-image: url("../img/advantages-tablet@1x.webp");
+    padding-bottom: 48px;
+    padding-top: 47px;
   }
 
   .cruises {
@@ -1875,7 +1883,7 @@ button {
   }
 
   .booking__text header {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     font-size: 34px;
     font-weight: 700;
     line-height: 51px;
@@ -1883,7 +1891,7 @@ button {
 
   .booking__text p {
     text-align: center;
-    margin-bottom: -5px;
+    margin-bottom: -2px;
   }
 
   .booking-form {
@@ -1892,11 +1900,11 @@ button {
   }
 
   .booking-form p {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
 
   .booking-form label {
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   .booking-form button {
@@ -1911,7 +1919,7 @@ button {
     column-gap: 30px;
     padding: 0 45px;
     padding-top: 80px;
-    padding-bottom: 88px;
+    padding-bottom: 84px;
   }
 
   .adress iframe {
@@ -1919,6 +1927,11 @@ button {
     justify-self: center;
     width: 100%;
     height: 335px;
+  }
+
+  .adress__text {
+    padding-top: 84px;
+    padding-bottom: 80px;
   }
 }
 
@@ -2070,8 +2083,6 @@ button {
   }
 
   .main-screen p {
-    padding: 0;
-    margin: 0;
     margin-top: 10px;
     font-size: 16px;
     line-height: 22px;
@@ -2238,6 +2249,10 @@ button {
     background-image: url("../img/form-bg-mobile@1x.webp");
   }
 
+  .booking__text {
+    margin-top: 0;
+  }
+
   .booking__text header {
     margin-bottom: 14px;
     font-size: 24px;
@@ -2250,6 +2265,7 @@ button {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0;
+    margin-bottom: -5px;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -2335,13 +2351,13 @@ button {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1365px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .br-on-tablet {
     display: inline-block;
   }
 }
 
-@media (max-width: 1365px) and (min-width: 767px) {
+@media (max-width: 1023px) and (min-width: 767px) {
   .br-on-desktop-and-mobile {
     display: none;
   }

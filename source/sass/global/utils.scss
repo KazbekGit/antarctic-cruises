@@ -85,7 +85,7 @@ button {
 .br-on-tablet {
   display: none;
 
-  @media (min-width: $vp-768) and (max-width: $vp-1365) {
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
     display: inline-block;
   }
 }
@@ -101,7 +101,7 @@ button {
 .br-on-tablet-and-mobile {
   display: none;
 
-  @media (max-width: $vp-1365) {
+  @media (max-width: $vp-1023) {
     display: inline-block;
   }
 }
@@ -117,7 +117,7 @@ button {
 .br-on-desktop-and-mobile {
   display: inline-block;
 
-  @media (max-width: $vp-1365) and (min-width: $vp-767) {
+  @media (max-width: $vp-1023) and (min-width: $vp-767) {
     display: none;
   }
 }
