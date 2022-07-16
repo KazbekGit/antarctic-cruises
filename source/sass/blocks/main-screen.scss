@@ -11,10 +11,10 @@
 
   text-shadow: 0 4px 4px $color-shadow-25;
 
-  @media (max-width: $vp-1024) {
+  @media (max-width: $vp-1023) {
     margin-bottom: 0;
-    margin-left: 0;
-    margin-top: 215px;
+    margin-left: 3px;
+    margin-top: 217px;
 
     font-size: 50px;
   }
@@ -36,7 +36,11 @@
 
   text-shadow: 0 4px 4px $color-shadow-25;
 
-  @media (max-width: $vp-1365) {
+  @media (max-width: $vp-1366) {
+
+  }
+
+  @media (max-width: $vp-1023) {
     margin-left: 0;
 
     font-size: 18px;

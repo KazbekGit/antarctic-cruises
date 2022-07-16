@@ -15,13 +15,13 @@
   background-size: cover;
   background-color: $color-denim;
 
-  @media (min-width: 1366px) {
+  @media (min-width: $vp-1023) {
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/header-bg-desktop@2x.webp");
     }
   }
 
-  @media (max-width: $vp-1365) {
+  @media (max-width: $vp-1023) {
     min-height: 638px;
 
     padding-left: 45px;

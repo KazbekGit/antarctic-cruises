@@ -8,7 +8,7 @@
   padding-left: 108px;
   padding-right: 108px;
 
-  @media (max-width: $vp-1365) {
+  @media (max-width: $vp-1023) {
     padding-top: 90px;
     padding-bottom: 100px;
     padding-left: 60px;
@@ -30,7 +30,7 @@
 
   color: $color-tangaroa;
 
-  @media (max-width: $vp-1365) {
+  @media (max-width: $vp-1023) {
     font-size: 26px;
     line-height: 39px;
   }
@@ -73,7 +73,7 @@
 
   box-shadow: 0 4px 35px $color-shadow-15;
 
-  @media (max-width: $vp-1365) {
+  @media (max-width: $vp-1023) {
     width: 309px;
     padding-left: 35px;
     padding-right: 35px;
@@ -100,7 +100,7 @@
 
   color: $color-alice-blue;
 
-  @media (max-width: $vp-1365) {
+  @media (max-width: $vp-1023) {
     bottom: 27px;
     left: 35px;
   }
@@ -161,10 +161,13 @@
 }
 
 .cruises__item img {
-  width: 260px;
   height: 386px;
 
-  @media (max-width: $vp-1365) {
+  @media (max-width: $vp-1023) {
+    width: 260px;
+  }
+
+  @media (max-width: $vp-1023) {
     width: 309px;
   }
 
@@ -201,7 +204,7 @@
   width: 260px;
   height: 386px;
 
-  @media (max-width: $vp-1365) {
+  @media (max-width: $vp-1023) {
     width: 309px;
   }
 

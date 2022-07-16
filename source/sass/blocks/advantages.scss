@@ -16,13 +16,13 @@
 
   background-color: $color-pale-cornflower-blue;
 
-  @media (min-width: 1366px) {
+  @media (min-width: $vp-1024) {
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/advantages-desktop@2x.webp");
     }
   }
 
-  @media (max-width: $vp-1365) {
+  @media (max-width: $vp-1023) {
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 62px;

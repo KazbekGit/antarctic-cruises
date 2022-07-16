@@ -1281,7 +1281,6 @@ button {
 }
 
 .cruises__item img {
-  width: 260px;
   height: 386px;
 }
 
@@ -1523,8 +1522,8 @@ button {
 .adress {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 560px 1fr;
+  grid-template-columns: 560px 1fr;
   -webkit-column-gap: 100px;
   -moz-column-gap: 100px;
   column-gap: 100px;
@@ -1540,10 +1539,13 @@ button {
 }
 
 .adress iframe {
-  width: 560px;
+  -ms-grid-column-align: stretch;
+  justify-self: stretch;
+  max-width: 560px;
   height: 305px;
-  -ms-grid-column-align: center;
-  justify-self: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .adress__text {
@@ -1617,26 +1619,13 @@ button {
   }
 }
 
-@media (min-width: 1366px) {
-  .br-on-desktop {
-    display: inline-block;
-  }
-
-  .social__list svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .booking {
-    background-image: url("../img/form-bg-desktop@1x.webp");
-  }
-}
-
-@media (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1366px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1366px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1023px) and (min-resolution: 1.5dppx) {
   .main-header {
     background-image: url("../img/header-bg-desktop@2x.webp");
   }
+}
 
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .advantages {
     background-image: url("../img/advantages-desktop@2x.webp");
   }
@@ -1646,17 +1635,26 @@ button {
   }
 }
 
-@media (max-width: 1365px) {
-  .br-on-tablet-and-mobile {
+@media (min-width: 1024px) {
+  .booking {
+    background-image: url("../img/form-bg-desktop@1x.webp");
+  }
+}
+
+@media (min-width: 1366px) {
+  .br-on-desktop {
     display: inline-block;
   }
 
-  .main-header {
-    min-height: 638px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 30px;
-    background-image: url("../img/header-bg-tablet@1x.webp");
+  .social__list svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 1365px) {
+  .br-on-tablet-and-mobile {
+    display: inline-block;
   }
 
   .main-nav {
@@ -1677,13 +1675,6 @@ button {
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
-  }
-
-  .main-screen p {
-    margin-left: 0;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
   }
 
   .logo {
@@ -1730,14 +1721,6 @@ button {
     width: 324px;
     height: 264px;
     margin-left: 10px;
-  }
-
-  .advantages {
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 62px;
-    padding-bottom: 97px;
-    background-image: url("../img/advantages-tablet@1x.webp");
   }
 
   .advantages h3 {
@@ -1797,6 +1780,38 @@ button {
     -moz-column-gap: 19px;
     column-gap: 19px;
   }
+}
+
+@media (max-width: 1023px) {
+  .main-header {
+    min-height: 638px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+    background-image: url("../img/header-bg-tablet@1x.webp");
+  }
+
+  .main-screen h1 {
+    margin-bottom: 0;
+    margin-left: 3px;
+    margin-top: 217px;
+    font-size: 50px;
+  }
+
+  .main-screen p {
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .advantages {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 62px;
+    padding-bottom: 97px;
+    background-image: url("../img/advantages-tablet@1x.webp");
+  }
 
   .cruises {
     padding-top: 90px;
@@ -1819,6 +1834,10 @@ button {
   .cruises__item > p {
     bottom: 27px;
     left: 35px;
+  }
+
+  .cruises__item img {
+    width: 260px;
   }
 
   .cruises__item img {
@@ -1896,12 +1915,14 @@ button {
   }
 
   .adress iframe {
+    -ms-grid-column-align: center;
+    justify-self: center;
     width: 100%;
     height: 335px;
   }
 }
 
-@media (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1365px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1365px) and (min-resolution: 1.5dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .main-header {
     background-image: url("../img/header-bg-tablet@2x.webp");
   }
@@ -1912,15 +1933,6 @@ button {
 
   .booking {
     background-image: url("../img/form-bg-tablet@2x.webp");
-  }
-}
-
-@media (max-width: 1024px) {
-  .main-screen h1 {
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-top: 215px;
-    font-size: 50px;
   }
 }
 
