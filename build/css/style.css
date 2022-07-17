@@ -688,12 +688,17 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.25);
   /* Black background with opacity */
-  z-index: 15;
+  z-index: 5;
   /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer;
   /* Add a pointer on hover */
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 .page-body {
@@ -1235,6 +1240,11 @@ button {
   min-height: 386px;
 }
 
+.cruises__item p {
+  margin: 0;
+  padding: 0;
+}
+
 .cruises__info {
   position: absolute;
   display: -webkit-box;
@@ -1254,7 +1264,7 @@ button {
   padding-right: 25px;
   padding-top: 68px;
   padding-bottom: 35px;
-  z-index: 5;
+  z-index: 19;
   color: #f9fbfd;
   background-color: #011c40;
   -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
@@ -1265,11 +1275,21 @@ button {
   position: absolute;
   bottom: 23px;
   left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  max-height: 40px;
   margin: 0;
   padding: 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+  z-index: 20;
   color: #f9fbfd;
 }
 
@@ -1289,31 +1309,6 @@ button {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-}
-
-.cruises__info a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 40px;
-  margin-top: auto;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 21px;
-  z-index: 11;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #011c40;
-  background-color: #f9fbfd;
 }
 
 .cruises__images {
@@ -1349,18 +1344,43 @@ button {
 .cruises__item:focus p {
   top: 27px;
   left: 25px;
-  z-index: 10;
+  z-index: 20;
 }
 
 .cruises__item:hover > p {
   top: 27px;
   left: 25px;
-  z-index: 10;
+  z-index: 20;
 }
 
 .cruises__picture-wrapper img {
   width: 260px;
   height: 386px;
+}
+
+.cruises__info a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  z-index: 26;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #011c40;
+  background-color: #f9fbfd;
 }
 
 .booking {
@@ -1845,6 +1865,7 @@ button {
   .advantages__item--small-liner svg {
     width: 21px;
     height: 26px;
+    margin-bottom: 17px;
   }
 
   .advantages__item--all-inclusive svg {
@@ -1899,6 +1920,10 @@ button {
 
   .cruises__item img {
     width: 309px;
+  }
+
+  .cruises__item:hover > p {
+    left: 35px;
   }
 
   .cruises__picture-wrapper img {
@@ -2070,6 +2095,7 @@ button {
     padding-left: 25px;
     padding-right: 15px;
     padding-top: 17px;
+    z-index: 10;
     background-color: #f9fbfd;
   }
 
@@ -2233,8 +2259,12 @@ button {
     padding-top: 30px;
   }
 
+  .advantages__item--small-liner {
+    padding-top: 25px;
+  }
+
   .advantages__item--small-liner svg {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   .advantages__item--all-inclusive svg {
@@ -2296,6 +2326,10 @@ button {
 
   .cruises__item img {
     width: 270px;
+  }
+
+  .cruises__item:hover > p {
+    left: 25px;
   }
 
   .cruises__picture-wrapper img {

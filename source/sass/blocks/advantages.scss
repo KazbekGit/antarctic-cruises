@@ -146,9 +146,16 @@
   }
 }
 
+.advantages__item--small-liner {
+  @media (max-width: $vp-767) {
+    padding-top: 25px;
+  }
+}
+
 .advantages__item svg {
   margin-bottom: 19px;
 }
+
 
 .advantages__item--small-liner svg {
   margin-bottom: 12px;
@@ -156,10 +163,12 @@
   @media (max-width: $vp-1023) {
     width: 21px;
     height: 26px;
+
+    margin-bottom: 17px;
   }
 
   @media (max-width: $vp-767) {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 }
 

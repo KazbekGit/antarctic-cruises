@@ -1,14 +1,41 @@
-import {toggle, navBlock, logoMobile} from '../utils/elements';
+import {toggle, navBlock, logoMobile, overlay, mainScreen, pageBody} from '../utils/elements';
 
-const toggleNav = () => {
+const checkLinkClick = (evt) => {
+  if (evt.target.matches('a')) {
+    closeNav();
+  }
+};
+
+const openNav = () => {
+  navBlock.classList.add('nav-block--opened');
+
+  logoMobile.style.opacity = 0;
+  mainScreen.style.opacity = 0;
+  overlay.classList.add('overlay');
+  pageBody.classList.add('stop-scrolling');
+
+  navBlock.addEventListener('click', checkLinkClick, false);
+};
+
+const closeNav = () => {
+  navBlock.classList.remove('nav-block--opened');
+
+  logoMobile.style.opacity = 1;
+  mainScreen.style.opacity = 1;
+  overlay.classList.remove('overlay');
+  pageBody.classList.remove('stop-scrolling');
+
+  navBlock.removeEventListener('click', checkLinkClick, false);
+};
+
+const navToggle = () => {
   toggle.addEventListener('click', () => {
-    navBlock.classList.toggle('nav-block--opened');
     if (navBlock.classList.contains('nav-block--opened')) {
-      logoMobile.style.opacity = 0;
+      closeNav();
     } else {
-      logoMobile.style.opacity = 1;
+      openNav();
     }
   });
 };
 
-export {toggleNav};
+export {navToggle};
