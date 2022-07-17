@@ -179,6 +179,16 @@
   transition: 0.3s;
 }
 
+.cruises__item:focus-within > p {
+  top: 27px;
+  left: 25px;
+  z-index: 20;
+}
+
+.cruises__info:focus-within {
+  opacity: 1;
+}
+
 .cruises__item:focus p {
   top: 27px;
   left: 25px;
