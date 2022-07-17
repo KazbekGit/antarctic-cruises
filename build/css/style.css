@@ -675,6 +675,27 @@ button {
   display: inline-block;
 }
 
+.overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: block;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  /* Black background with opacity */
+  z-index: 15;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+}
+
 .page-body {
   width: 100%;
   max-width: 1366px;
@@ -887,11 +908,30 @@ button {
   display: none;
 }
 
-.nav-block--opened .toggle {
+.nav-block__toggle-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   right: 15px;
-  top: 30px;
-  width: 16px;
+  top: 20px;
+  width: 25px;
+  height: 20px;
+  padding-top: 1px;
+}
+
+.toggle {
+  top: 20px;
+}
+
+.nav-block--opened .toggle {
+  position: absolute;
+  right: 1px;
+  top: 9px;
+  width: 18px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -900,13 +940,21 @@ button {
   background-color: #011c40;
 }
 
+.nav-block--opened .nav-block__toggle-wrapper {
+  position: absolute;
+  right: 11px;
+  top: 22px;
+  width: 20px;
+  height: 20px;
+}
+
 .nav-block--opened .toggle::after {
   position: absolute;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   content: "";
-  width: 16px;
+  width: 18px;
   height: 2px;
   background-color: #011c40;
 }
@@ -1478,9 +1526,8 @@ button {
 .booking-form label::before {
   position: absolute;
   content: "";
-  width: 18px;
-  height: 18px;
-  border-radius: 3px;
+  width: 19px;
+  height: 19px;
   cursor: pointer;
   background-color: #f9fbfd;
 }
@@ -1706,6 +1753,8 @@ button {
     padding-right: 45px;
     padding-top: 30px;
     background-image: url("../img/header-bg-tablet@1x.webp");
+    -webkit-filter: none;
+    filter: none;
   }
 
   .main-screen h1 {
@@ -1919,7 +1968,7 @@ button {
     column-gap: 30px;
     padding: 0 45px;
     padding-top: 80px;
-    padding-bottom: 84px;
+    padding-bottom: 89px;
   }
 
   .adress iframe {
@@ -1930,8 +1979,20 @@ button {
   }
 
   .adress__text {
+    row-gap: 23px;
     padding-top: 84px;
     padding-bottom: 80px;
+  }
+
+  .adress__geolocation {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 3px;
+  }
+
+  .adress__geolocation svg {
+    margin-top: 8px;
   }
 }
 
@@ -2008,7 +2069,7 @@ button {
     min-height: 568px;
     padding-left: 25px;
     padding-right: 15px;
-    padding-top: 22px;
+    padding-top: 17px;
     background-color: #f9fbfd;
   }
 
@@ -2023,7 +2084,7 @@ button {
     row-gap: 26px;
     margin: 0;
     padding: 0;
-    margin-top: 33px;
+    margin-top: 44px;
   }
 
   .nav-block--nojs {
@@ -2102,7 +2163,7 @@ button {
   .trip {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 45px;
+    padding-top: 35px;
     padding-bottom: 65px;
   }
 
@@ -2127,7 +2188,7 @@ button {
 
   .trip__text p {
     margin-right: 0;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 
   .trip__img-wrapper {
@@ -2199,7 +2260,7 @@ button {
     row-gap: 23px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 10px;
+    padding-top: 41px;
   }
 
   .social {
@@ -2242,7 +2303,7 @@ button {
   }
 
   .booking {
-    padding-top: 57px;
+    padding-top: 59px;
     padding-bottom: 65px;
     padding-left: 15px;
     padding-right: 15px;
@@ -2273,17 +2334,18 @@ button {
 
   .booking-form {
     max-width: 290px;
-    margin-top: 33px;
+    margin-top: 39px;
     padding: 65px 30px;
     padding-top: 13px;
-    padding-bottom: 38px;
+    padding-bottom: 40px;
   }
 
   .booking-form p {
     text-align: center;
     margin-right: 5px;
     margin-left: 5px;
-    margin-bottom: 3px;
+    margin-bottom: 7px;
+    line-height: 25px;
   }
 
   .booking-form label {
@@ -2291,7 +2353,12 @@ button {
   }
 
   .booking-form span {
-    padding-right: 54px;
+    padding-right: 45px;
+    padding-left: 28px;
+  }
+
+  .booking-form button {
+    margin-top: 7px;
   }
 
   .booking-form input[type="checkbox"] {
@@ -2309,7 +2376,7 @@ button {
     grid-template-rows: 1fr 316px;
     padding: 65px 15px;
     padding-top: 57px;
-    padding-bottom: 87px;
+    padding-bottom: 90px;
   }
 
   .adress iframe {
@@ -2332,8 +2399,22 @@ button {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    row-gap: 24px;
     padding-top: 0;
     padding-bottom: 10px;
+  }
+
+  .adress__geolocation {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  .adress__phone {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 }
 
