@@ -1730,10 +1730,6 @@ button {
 }
 
 @media (max-width: 1365px) {
-  .main-nav {
-    margin-bottom: 150px;
-  }
-
   .nav-list {
     -webkit-column-gap: 23px;
     -moz-column-gap: 23px;
@@ -1748,21 +1744,6 @@ button {
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
-  }
-
-  .logo {
-    margin-right: 25px;
-  }
-
-  .logo--tablet {
-    display: block;
-    width: 38px;
-    height: 20px;
-  }
-
-  .logo--desktop,
-  .logo--mobile {
-    display: none;
   }
 
   .social__list {
@@ -1787,6 +1768,10 @@ button {
     filter: none;
   }
 
+  .main-nav {
+    margin-bottom: 150px;
+  }
+
   .main-screen h1 {
     margin-bottom: 0;
     margin-left: 0;
@@ -1802,6 +1787,21 @@ button {
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
+  }
+
+  .logo {
+    margin-right: 25px;
+  }
+
+  .logo--tablet {
+    display: block;
+    width: 38px;
+    height: 20px;
+  }
+
+  .logo--desktop,
+  .logo--mobile {
+    display: none;
   }
 
   .trip {
