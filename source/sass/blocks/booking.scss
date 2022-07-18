@@ -1,14 +1,4 @@
 .booking {
-  display: flex;
-  column-gap: 144px;
-  align-items: center;
-  justify-content: center;
-
-  padding-top: 50px;
-  padding-bottom: 49px;
-  padding-left: 163px;
-  padding-right: 163px;
-
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,13 +14,6 @@
   }
 
   @media (max-width: $vp-1023) {
-    flex-direction: column;
-
-    padding-top: 89px;
-    padding-bottom: 100px;
-    padding-left: 174px;
-    padding-right: 174px;
-
     background-image: url("../img/form-bg-tablet@1x.webp");
 
     @media (min-resolution: $retina-dppx) {
@@ -39,16 +22,44 @@
   }
 
   @media (max-width: $vp-767) {
-    padding-top: 59px;
-    padding-bottom: 65px;
-    padding-left: 15px;
-    padding-right: 15px;
-
     background-image: url("../img/form-bg-mobile@1x.webp");
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/form-bg-mobile@2x.webp");
     }
+  }
+}
+
+.booking__wrapper {
+  display: flex;
+  column-gap: 144px;
+  align-items: center;
+  justify-content: center;
+
+  max-width: $vp-1366;
+  min-width: $vp-320;
+
+  padding-top: 50px;
+  padding-bottom: 49px;
+  padding-left: 163px;
+  padding-right: 163px;
+
+  margin: 0 auto;
+
+  @media (max-width: $vp-1023) {
+    flex-direction: column;
+
+    padding-top: 89px;
+    padding-bottom: 100px;
+    padding-left: 174px;
+    padding-right: 174px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 59px;
+    padding-bottom: 65px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

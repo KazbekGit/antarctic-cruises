@@ -1,16 +1,23 @@
 .page-footer {
+  margin-top: auto;
+
+  background-color: $color-tangaroa;
+}
+
+.page-footer__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 
-  margin-top: auto;
   padding-top: 50px;
   padding-bottom: 48px;
   padding-left: 103px;
   padding-right: 103px;
+  margin: 0 auto;
 
-  background-color: $color-tangaroa;
+  max-width: $vp-1366;
+  min-width: $vp-320;
 
   @media (max-width: $vp-1023) {
     padding-left: 45px;
@@ -30,6 +37,5 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 41px;
-
   }
 }

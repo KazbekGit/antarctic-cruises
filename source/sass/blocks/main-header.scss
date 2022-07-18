@@ -1,10 +1,4 @@
 .main-header {
-  min-height: 650px;
-
-  padding-left: 103px;
-  padding-right: 103px;
-  padding-top: 35px;
-
   color: $color-alice-blue;
 
   filter: drop-shadow(0 4px 4px $color-shadow-25);
@@ -22,12 +16,6 @@
   }
 
   @media (max-width: $vp-1023) {
-    min-height: 638px;
-
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 30px;
-
     background-image: url("../img/header-bg-tablet@1x.webp");
 
     filter: none;
@@ -38,16 +26,38 @@
   }
 
   @media (max-width: $vp-767) {
-    min-height: 500px;
-
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 20px;
-
     background-image: url("../img/header-bg-mobile@1x.webp");
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/header-bg-mobile@2x.webp");
     }
+  }
+}
+
+.main-header__wrapper {
+  margin: 0 auto;
+  
+  min-height: 650px;
+  max-width: $vp-1366;
+  min-width: $vp-320;
+
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 35px;
+
+  @media (max-width: $vp-1023) {
+    min-height: 638px;
+
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-height: 500px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
   }
 }
