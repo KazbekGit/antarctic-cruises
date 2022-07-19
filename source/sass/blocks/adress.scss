@@ -1,4 +1,9 @@
-.adress {
+.adress__wrapper {
+  max-width: $vp-1366;
+  min-width: $vp-320;
+
+  margin: 0 auto;
+
   display: grid;
   grid-template-columns: 560px 1fr;
   column-gap: 100px;
@@ -9,6 +14,14 @@
   padding-bottom: 109px;
 
   color: $color-tangaroa;
+
+  @media (max-width: $vp-1365) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+
+    padding-top: 80px;
+    padding-bottom: 89px;
+  }
 
   @media (max-width: $vp-1023) {
     grid-template-columns: 1fr 1fr;
@@ -32,10 +45,8 @@
 .adress iframe {
   justify-self: stretch;
 
-  max-width: 560px;
   height: 305px;
 
-  flex: 1 1 auto;
   @media (max-width: $vp-1023) {
     justify-self: center;
 
@@ -59,8 +70,6 @@
 
   padding-top: 75px;
   padding-bottom: 85px;
-
-  max-width: 500px;
 
   font-size: 16px;
   font-weight: 400;

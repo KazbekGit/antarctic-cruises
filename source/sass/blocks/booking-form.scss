@@ -162,13 +162,18 @@
   border-right: none;
 
   left: 4px;
-  top: 2px;
+  top: 0;
 
   transform: rotate(-50deg);
 
   cursor: pointer;
 
   background-color: transparent;
+
+  @media (max-width: $vp-1024) {
+    width: 9px;
+    height: 8px;
+  }
 
   @media (max-width: $vp-767) {
     top: 7px;
