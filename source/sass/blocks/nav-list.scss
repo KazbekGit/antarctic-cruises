@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   column-gap: 33px;
 
-  max-width: 890px;
+  flex-basis: 890px;
   margin: 0;
   padding: 0;
 
@@ -12,6 +12,7 @@
   user-select: none;
 
   @media (max-width: $vp-1365) {
+    flex-basis: 441px;
     column-gap: 23px;
   }
 
@@ -21,6 +22,7 @@
 
   &--footer {
     @media (max-width: $vp-767) {
+      flex-basis: 105px;
       display: flex;
       flex-direction: column;
       row-gap: 7px;

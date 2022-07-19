@@ -6,13 +6,15 @@
       right: 0;
 
       width: calc(100% - 35px);
-      min-height: 568px;
+      height: 100vh;
 
       padding-left: 25px;
       padding-right: 15px;
       padding-top: 17px;
 
       z-index: 10;
+
+      overflow: scroll;
 
       background-color: $color-alice-blue;
     }

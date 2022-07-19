@@ -6,6 +6,10 @@ const checkLinkClick = (evt) => {
   }
 };
 
+const checkOverlayClick = () => {
+  closeNav();
+};
+
 const openNav = () => {
   navBlock.classList.add('nav-block--opened');
 
@@ -14,6 +18,7 @@ const openNav = () => {
   overlay.classList.add('overlay');
   pageBody.classList.add('stop-scrolling');
 
+  overlay.addEventListener('click', checkOverlayClick, false);
   navBlock.addEventListener('click', checkLinkClick, false);
 };
 
@@ -26,6 +31,7 @@ const closeNav = () => {
   pageBody.classList.remove('stop-scrolling');
 
   navBlock.removeEventListener('click', checkLinkClick, false);
+  overlay.removeEventListener('click', checkOverlayClick, false);
 };
 
 const navToggle = () => {

@@ -52,7 +52,7 @@
 .cruises__item {
   position: relative;
 
-  min-height: 386px;
+  height: 386px;
 }
 
 .cruises__item p {
@@ -70,7 +70,6 @@
   opacity: 0;
 
   width: 260px;
-  min-height: 386px;
 
   padding-left: 25px;
   padding-right: 25px;
@@ -81,8 +80,6 @@
 
   color: $color-alice-blue;
   background-color: $color-tangaroa;
-
-  box-shadow: 0 4px 35px $color-shadow-15;
 
   @media (max-width: $vp-1023) {
     width: 309px;
@@ -189,6 +186,14 @@
   top: 27px;
   left: 25px;
   z-index: 20;
+
+  @media (max-width: $vp-1023) {
+    left: 35px;
+  }
+
+  @media (max-width: $vp-767) {
+    left: 25px;
+  }
 }
 
 .cruises__info:focus-within {
@@ -199,6 +204,11 @@
   top: 27px;
   left: 25px;
   z-index: 20;
+}
+
+.cruises__item:hover,
+.cruises__item:focus-within {
+  overflow-y: scroll;
 }
 
 .cruises__item:hover > p {

@@ -895,7 +895,8 @@ button {
   -webkit-column-gap: 33px;
   -moz-column-gap: 33px;
   column-gap: 33px;
-  max-width: 890px;
+  -ms-flex-preferred-size: 890px;
+  flex-basis: 890px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1225,6 +1226,7 @@ button {
   -webkit-column-gap: 26px;
   -moz-column-gap: 26px;
   column-gap: 26px;
+  row-gap: 16px;
   max-width: 112px;
   margin: 0;
   padding: 0;
@@ -1264,7 +1266,7 @@ button {
 
 .cruises__item {
   position: relative;
-  min-height: 386px;
+  height: 386px;
 }
 
 .cruises__item p {
@@ -1286,7 +1288,6 @@ button {
   justify-content: flex-start;
   opacity: 0;
   width: 260px;
-  min-height: 386px;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 68px;
@@ -1294,8 +1295,6 @@ button {
   z-index: 19;
   color: #f9fbfd;
   background-color: #011c40;
-  -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
-  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
 }
 
 .cruises__item > p {
@@ -1384,6 +1383,11 @@ button {
   z-index: 20;
 }
 
+.cruises__item:hover,
+.cruises__item:focus-within {
+  overflow-y: scroll;
+}
+
 .cruises__item:hover > p {
   top: 27px;
   left: 25px;
@@ -1444,7 +1448,7 @@ button {
   min-width: 320px;
   margin: 0 auto;
   padding-top: 50px;
-  padding-bottom: 49px;
+  padding-bottom: 50px;
   padding-left: 163px;
   padding-right: 163px;
 }
@@ -1487,8 +1491,9 @@ button {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
-  padding-bottom: 52px;
-  max-width: 403px;
+  padding-bottom: 50px;
+  -ms-flex-preferred-size: 403px;
+  flex-basis: 403px;
   background-color: #011c40;
 }
 
@@ -1762,6 +1767,8 @@ button {
 
 @media (max-width: 1365px) {
   .nav-list {
+    -ms-flex-preferred-size: 441px;
+    flex-basis: 441px;
     -webkit-column-gap: 23px;
     -moz-column-gap: 23px;
     column-gap: 23px;
@@ -1894,6 +1901,7 @@ button {
   }
 
   .trip__text h2 {
+    padding-right: 45px;
     font-size: 26px;
     line-height: 36px;
   }
@@ -2010,6 +2018,10 @@ button {
     width: 309px;
   }
 
+  .cruises__item:focus-within > p {
+    left: 35px;
+  }
+
   .cruises__item:hover > p {
     left: 35px;
   }
@@ -2062,6 +2074,8 @@ button {
   .booking-form {
     margin-top: 55px;
     padding-bottom: 50px;
+    margin-right: 8px;
+    margin-left: 8px;
   }
 
   .booking-form p {
@@ -2168,6 +2182,8 @@ button {
   }
 
   .nav-list--footer {
+    -ms-flex-preferred-size: 105px;
+    flex-basis: 105px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2185,11 +2201,12 @@ button {
     top: 0;
     right: 0;
     width: calc(100% - 35px);
-    min-height: 568px;
+    height: 100vh;
     padding-left: 25px;
     padding-right: 15px;
     padding-top: 17px;
     z-index: 10;
+    overflow: scroll;
     background-color: #f9fbfd;
   }
 
@@ -2303,6 +2320,7 @@ button {
   }
 
   .trip__text h2 {
+    padding-right: 20px;
     font-size: 24px;
     font-weight: 600;
     line-height: 34px;
@@ -2427,6 +2445,10 @@ button {
     width: 270px;
   }
 
+  .cruises__item:focus-within > p {
+    left: 25px;
+  }
+
   .cruises__item:hover > p {
     left: 25px;
   }
@@ -2469,7 +2491,10 @@ button {
   }
 
   .booking-form {
-    max-width: 290px;
+    -ms-flex-preferred-size: 290px;
+    flex-basis: 290px;
+    margin-right: 0;
+    margin-left: 0;
     margin-top: 39px;
     padding: 65px 30px;
     padding-top: 13px;
